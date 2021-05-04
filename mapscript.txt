@@ -1,0 +1,28 @@
+		 		<script>
+		
+		var marker1= new google.maps.LatLng(41.835117, -87.627130);
+		var marker2= new google.maps.LatLng(41.8826870366143, -87.62343975521112);
+		var marker3= new google.maps.LatLng(41.882659304758576, -87.62330767610253);
+		var icon;
+		
+		
+//function initMap() {	
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 41.87980015887943, lng: -87.62329487707916},
+    zoom: 20}
+   );
+ 	var contentString = '<h1>IIT Perlstein Hall</h1><p>Lorem ipsum dolor sium, nemo aperiam? Ipsam, atque nobis rem.</p>';
+
+	var infowindow = new google.maps.InfoWindow({
+      content: contentString
+  	});
+}
+</script>
+ <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&callback=initMap"
+  type="text/javascript"></script>
+
+<--final LatLng melbourneLocation = new LatLng(-37.813, 144.962);
+Marker melbourne = map.addMarker(
+    new MarkerOptions()
+        .position(melbourneLocation)
+        .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));-->

@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
 	
-      <title>Meet Kimberly Robinson</title>
+      <title>Kim's Favorite Places</title>
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Ranchers" rel="stylesheet">
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI &callback=initMap&libraries=&v=weekly"async defer></script>
-		
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+		<script async type="text/javascript" src="js/script.js"></script>
   </head>
   <body>
     <nav class="navbar">
@@ -28,26 +28,9 @@
 	    <p> Chicago is only technically a Midwestern city.  It's certainly more interesting than 90% of the Midwestern cities :-).</p>
 		
 		 <div id="map"></div>
-		 		<script>
-		var map;
-		var marker1;
-		var icon;
-		
-function initMap() {	
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 41.87980015887943, lng: -87.62329487707916},
-    zoom: 20}
-   );
-}
-</script>
 
-//final LatLng melbourneLocation = new LatLng(-37.813, 144.962);
-Marker melbourne = map.addMarker(
-    new MarkerOptions()
-        .position(melbourneLocation)
-        .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
       
-		
+	
 		Here are a few interesting places to visit:
 		
 		<h2>#1  VISIT:  The Art Institute of Chicago</h2>
@@ -64,7 +47,7 @@ Marker melbourne = map.addMarker(
 		<img src="image/bean.jpg" width=20% height=20% alt="Picture of Chicago's Cloud Gate - aka The Bean">
 		
 
-		//(lat:41.8826870366143, lng:-87.62343975521112), (lat:41.882659304758576, lng:-87.62330767610253)AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI  
+		<!--(lat:41.8826870366143, lng:-87.62343975521112), (lat:41.882659304758576, lng:-87.62330767610253)AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI --> 
 		
 		
 </body>
