@@ -23,13 +23,16 @@
 		
 	});
 
-	var contentString = '<img src="image/marker1.jpg" alt="#1 Site to See" width="300" height="30">';
-	var marker1= '41.87967013055939, -87.62373142891539';
-	var marker2= new google.maps.LatLng(41.8826870366143, -87.62343975521112);
-	var marker3= new google.maps.LatLng(41.882659304758576, -87.62330767610253);
+	var marker1 = '<img src="image/marker1.jpg" alt="#1 Site to See" width="300" height="30">';
+	var marker2 = '<img src="image/marker2.jpg" alt="#1 Site to See" width="300" height="30">';
+	var marker3 = '<img src="image/marker3.jpg" alt="#1 Site to See" width="300" height="30">';
+	
+	var location1= '41.87967013055939, -87.62373142891539';
+	var location2= new google.maps.LatLng(41.8826870366143, -87.62343975521112);
+	var location3= new google.maps.LatLng(41.882659304758576, -87.62330767610253);
 
 	var infowindow = new google.maps.InfoWindow({
-      content: contentString
+      content: location1
 	  
 
   	});
