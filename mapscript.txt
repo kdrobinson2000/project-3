@@ -2,7 +2,7 @@
 		
 		var marker1= new google.maps.LatLng(41.835117, -87.627130);
 		var marker2= new google.maps.LatLng(41.8826870366143, -87.62343975521112);
-		var marker3= new google.maps.LatLng(41.882659304758576, -87.62330767610253);
+		var marker3= new google.maps.LatLng(41.8826, -87.6233);
 		var icon;
 		
 		

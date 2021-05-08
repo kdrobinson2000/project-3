@@ -1,38 +1,61 @@
+function initMap() {
+
+var options={
+center: {lat:41.8797, lng:-87.6237},
+zoom: 15
+}
+
+
+ var map = new google.maps.Map(document.getElementById('map'), options)
+ 
+
+var marker1 = new google.maps.Marker({
+position:{lat:41.8806, lng:-87.6247},
+map:map,
+icon:"image/place1.png"
+});
+
+var marker2 = new google.maps.Marker({
+position:{lat:41.8835, lng:-87.6257},
+map:map,
+icon:"image/place2.png"
+});
+
+var marker3 = new google.maps.Marker({
+position:{lat:41.8827, lng:-87.6234},
+map:map,
+icon:"image/place3.png"
+});
+
+const detailwindow3= new google.maps.InfoWindow ({
+	Content: '<h3>Park Grill - American Fare in Millennium Park</h3>'	
+});	
 
 
 
-  function init(){
+marker1.addListener('mouseover', () =>{
+	detailwindow1.open(map,marker1);
+})	
 
-	var map = document.getElementById('map');
-	 var myLocation= new google.maps.LatLng ([
-      [ 41.879736253871656, -87.62368111519166],
-      [ 41.8828540097483, -87.62347127286442],
-      [ 41.88260412033522, -87.62336315937388]
-    );
-    for (i = 0; i < myLocation.length; i++) {  
-     var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(myLocation[i][0], myLocation[i][1]),
-        map: myMap
-        
-	var mapOptions = {
-		center: myLocation,
-		zoom: 20,
-		
-		
-	};
+const detailwindow2= new google.maps.InfoWindow ({
+	Content: '<h3>Cloud Gate "The Bean" - Huge outdoor sculpture shaped like a bean & allowing for views from its many mirrored sides.</h3>'	
+});	
 
-	var myMap = new google.maps.Map(map, mapOptions);
+marker2.addListener('mouseover', () =>{
+	detailwindow2.open(map,marker2);
+})	
 
-	var marker = new google.maps.Marker({
-		position: myLocation,
-		map: myMap,
-		
-		
-	});
+const detailwindow1= new google.maps.InfoWindow ({
+	Content: '<h3>The Art Institute of Chicago - Renowned art museum holding nearly 300,000 works from all over the world, spanning many centuries.</h3>'	
+});	
 
-	
+marker3.addListener('mouseover', () =>{
+	detailwindow3.open(map,marker3);
+})
+}
 
-google.maps.event.addDomListener(window, 'load', init);
+
+
 
 
 
