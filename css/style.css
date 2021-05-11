@@ -198,8 +198,14 @@ li a {
   }
 }
 
-
-
+#pic {
+	width: 20%;
+	height: 20%;
+}
+#artpic {
+	width: 50%;
+	height: 50%;
+}
 
 /* For mobile phones: hide aside box */
 @media screen and (max-width:319px) {
