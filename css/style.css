@@ -198,13 +198,17 @@ li a {
   }
 }
 
-#pic {
+#cloudpic {
 	width: 20%;
 	height: 20%;
 }
 #artpic {
 	width: 50%;
 	height: 50%;
+}
+#grillpic {
+	width: 20%;
+	height: 20%;
 }
 
 /* For mobile phones: hide aside box */
