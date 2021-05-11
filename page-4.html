@@ -6,11 +6,13 @@
       <title>Kim's Favorite Places</title>
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+		 <link rel="stylesheet" type="text/css" href="css/slidercss.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Ranchers" rel="stylesheet">
-		
 		<script async type="text/javascript" src="js/script.js"></script>
+		<script async type="text/javascript" src="js/slidescript.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
   </head>
   <body>
     <nav class="navbar">
@@ -21,9 +23,36 @@
         <li><a href="page-3.html">Resume</a></li>
 	  </ul> 
     </nav>
-    
-    
-      <h2 id="p4title">Favorite Chicago Places!</h2>
+	
+	      <h1>Favorite Chicago Places</h1>
+		  
+<!--slider section-->  		  
+
+<div class="slide-wrap">
+  <div class="slide-mask">
+    <ul class="slide-group">
+	  <li class="slide"> <img src="image/choose_chicago.jpg" alt="Picture of Choose Chicago Logo" ></li>
+      <li class="slide"> <img src="image/art.jpg" alt="Picture of Chicago's Art Institute" ></li>
+      <li class="slide"><img src="image/bean.jpg"  alt="Picture of The Bean"> </li>      
+      <li class="slide"><img src="image/grill.jpg" alt="Picture of food at The Grill"></li>
+	  <li class="slide"> <img src="image/crown_fountain.jpg" alt="Picture of Crown Fountain" "></li>
+    </ul>
+  </div>
+  
+  <div class="slide-nav">
+    <ul>
+      <li class="bullet"></li>
+      <li class="bullet"></li>
+      <li class="bullet"></li>
+      <li class="bullet"></li> 
+      <li class="bullet"></li>       
+    </ul>
+  </div>
+</div>
+
+
+<!--map section-->  
+
 	 
 	    <p> Chicago is only technically a Midwestern city.  It's certainly more interesting than 90% of the Midwestern cities :-).</p>
 		
@@ -50,7 +79,7 @@
 		<img src="image/bean.jpg" width=20% height=20% alt="Picture of Chicago's Cloud Gate - aka The Bean">
 		
 
-		<!--(lat:41.8826870366143, lng:-87.62343975521112), (lat:41.882659304758576, lng:-87.62330767610253)AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI --> 
+	
 		
 		
 </body>
