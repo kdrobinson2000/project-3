@@ -8,7 +8,8 @@ var map = new google.maps.Map(document.getElementById('map'), {
   center: {lat: 41.8797, lng: -87.6237,
   zoom: 15
 });
- 
+
+
 var marker1 = new google.maps.Marker({
 position:{lat: 41.8806, lng: -87.6247},
 map:map,
@@ -53,8 +54,8 @@ const detailwindow1= new google.maps.InfoWindow ({
 marker3.addListener('mouseover', () =>{
 	detailwindow3.open(map,marker3);
 });
-}
 
+}
 	
 //slider
 
