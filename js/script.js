@@ -2,31 +2,34 @@
 
 //map
 
+
 function initMap() {
 
-var map = new google.maps.Map(document.getElementById('map'), {
-  center: {lat: 41.8797, lng: -87.6237,
-  zoom: 15
-});
+var options={
+center: {lat:41.8797, lng:-87.6237},
+zoom: 15
+}
 
 
+ var map = new google.maps.Map(document.getElementById('map'), options)
 var marker1 = new google.maps.Marker({
-position:{lat: 41.8806, lng: -87.6247},
+position:{lat:41.8806, lng:-87.6247},
 map:map,
 icon:"image/place1.png"
 });
 
 var marker2 = new google.maps.Marker({
-position:{lat: 41.8835, lng: -87.6257},
+position:{lat:41.8835, lng:-87.6257},
 map:map,
 icon:"image/place2.png"
 });
 
 var marker3 = new google.maps.Marker({
-position:{lat: 41.8827, lng: -87.6234},
+position:{lat:41.8827, lng:-87.6234},
 map:map,
 icon:"image/place3.png"
 });
+
 
 const detailwindow3= new google.maps.InfoWindow ({
 	Content: '<h3>Park Grill - American Fare in Millennium Park</h3>'	
